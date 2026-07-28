@@ -1,21 +1,21 @@
 /*
  ╔══════════════════════════════════════════════════════════════════╗
- ║   MILDEWMAVERICK — MAIN ESP32 CODE  v5.0                        ║
- ║   Team SpectraFarm | Pune Agri Hackathon 2025                   ║
+ ║   MILDEWMAVERICK — MAIN ESP32 CODE  v5.0                                     ║
+ ║   Team SpectraFarm | Pune Agri Hackathon 2025                                ║
  ╠══════════════════════════════════════════════════════════════════╣
- ║   NEW IN v5.0:                                                   ║
- ║   • Sends row number to ESP32-CAM via 4-bit GPIO signal         ║
- ║   • Treatment Efficacy Score sent to cloud per session          ║
- ║   • Row-level severity tracked and sent to Google Sheets        ║
- ║   • Risk Score per session (HIGH×3 + MEDIUM×2 + LOW×1)         ║
- ║   • Efficacy % = ((last risk - this risk) / last risk) × 100   ║
+ ║   NEW IN v5.0:                                                               ║
+ ║   • Sends row number to ESP32-CAM via 4-bit GPIO signal                      ║
+ ║   • Treatment Efficacy Score sent to cloud per session                       ║
+ ║   • Row-level severity tracked and sent to Google Sheets                     ║
+ ║   • Risk Score per session (HIGH×3 + MEDIUM×2 + LOW×1)                       ║
+ ║   • Efficacy % = ((last risk - this risk) / last risk) × 100                 ║
  ╠══════════════════════════════════════════════════════════════════╣
- ║   WIRING ADDED IN v5.0:                                         ║
- ║   Main ESP32 GPIO 16 → ESP32-CAM GPIO 14 (Row Bit 0)           ║
- ║   Main ESP32 GPIO 17 → ESP32-CAM GPIO 15 (Row Bit 1)           ║
- ║   Main ESP32 GPIO 18 → ESP32-CAM GPIO 2  (Row Bit 2)           ║
- ║   Main ESP32 GPIO 19 → ESP32-CAM GPIO 16 (Row Bit 3)           ║
- ║   (These 4 wires tell the CAM which row the rover is on)        ║
+ ║   WIRING ADDED IN v5.0:                                                      ║
+ ║   Main ESP32 GPIO 16 → ESP32-CAM GPIO 14 (Row Bit 0)                         ║  
+ ║   Main ESP32 GPIO 17 → ESP32-CAM GPIO 15 (Row Bit 1)                         ║
+ ║   Main ESP32 GPIO 18 → ESP32-CAM GPIO 2  (Row Bit 2)                         ║
+ ║   Main ESP32 GPIO 19 → ESP32-CAM GPIO 16 (Row Bit 3)                         ║
+ ║   (These 4 wires tell the CAM which row the rover is on)                     ║
  ╚══════════════════════════════════════════════════════════════════╝
 */
 
