@@ -1,31 +1,31 @@
 /*
  ╔══════════════════════════════════════════════════════════════════╗
- ║   MILDEWMAVERICK — ESP32-CAM CODE  v5.0                         ║
- ║   Team SpectraFarm | Pune Agri Hackathon 2025                   ║
+ ║   MILDEWMAVERICK — ESP32-CAM CODE  v5.0                                      ║
+ ║   Team SpectraFarm | Pune Agri Hackathon 2025                                ║
  ╠══════════════════════════════════════════════════════════════════╣
- ║   NEW IN v5.0:                                                   ║
- ║   • Niphad Grape Leaf Disease Model (Maharashtra-specific)       ║
- ║   • Frame capture every 8 seconds (no continuous streaming)      ║
- ║   • Live MJPEG stream on port 81 (view only — no API cost)      ║
- ║   • Logs row_number with each detection for Row Heatmap          ║
- ║   • Receives current row from main ESP32 via 4-bit GPIO          ║
- ║   • Improved camera image quality settings for better detection  ║
+ ║   NEW IN v5.0:                                                               ║
+ ║   • Niphad Grape Leaf Disease Model (Maharashtra-specific)                   ║
+ ║   • Frame capture every 8 seconds (no continuous streaming)                  ║
+ ║   • Live MJPEG stream on port 81 (view only — no API cost)                   ║
+ ║   • Logs row_number with each detection for Row Heatmap                      ║
+ ║   • Receives current row from main ESP32 via 4-bit GPIO                      ║
+ ║   • Improved camera image quality settings for better detection              ║
  ╠══════════════════════════════════════════════════════════════════╣
- ║   ROBOFLOW MODEL USED:                                           ║
- ║   Name    : Niphad Grape Leaf Disease Dataset                   ║
- ║   Region  : Niphad, Nashik — Maharashtra grape belt             ║
- ║   Classes : Powdery_Mildew, Black_Rot, Leaf_Blight, Healthy     ║
- ║   Find at : universe.roboflow.com → search "Niphad grape"       ║
+ ║   ROBOFLOW MODEL USED:                                                       ║
+ ║   Name    : Niphad Grape Leaf Disease Dataset                                ║
+ ║   Region  : Niphad, Nashik — Maharashtra grape belt                          ║
+ ║   Classes : Powdery_Mildew, Black_Rot, Leaf_Blight, Healthy                  ║
+ ║   Find at : universe.roboflow.com → search "Niphad grape"                    ║
  ╠══════════════════════════════════════════════════════════════════╣
- ║   ARDUINO IDE UPLOAD SETTINGS:                                   ║
- ║   Board            : AI Thinker ESP32-CAM                       ║
- ║   Partition Scheme : Huge APP (3MB No OTA/1MB SPIFFS)           ║
- ║   PSRAM            : Enabled                                     ║
- ║   Upload Speed     : 115200                                      ║
- ║   Hold BOOT button when "Connecting..." appears                  ║
+ ║   ARDUINO IDE UPLOAD SETTINGS:                                               ║
+ ║   Board            : AI Thinker ESP32-CAM                                    ║
+ ║   Partition Scheme : Huge APP (3MB No OTA/1MB SPIFFS)                        ║
+ ║   PSRAM            : Enabled                                                 ║
+ ║   Upload Speed     : 115200                                                  ║
+ ║   Hold BOOT button when "Connecting..." appears                              ║
  ╠══════════════════════════════════════════════════════════════════╣
- ║   LIBRARIES NEEDED:                                              ║
- ║   ArduinoJson by Benoit Blanchon — install via Library Manager  ║
+ ║   LIBRARIES NEEDED:                                                          ║
+ ║   ArduinoJson by Benoit Blanchon — install via Library Manager.              ║
  ╚══════════════════════════════════════════════════════════════════╝
 */
 
